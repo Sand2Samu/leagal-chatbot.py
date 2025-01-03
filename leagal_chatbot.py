@@ -1,4 +1,4 @@
-port numpy as np
+import numpy as np
 import pandas as pd
 import os
 import json
@@ -80,6 +80,9 @@ if st.button("Ask"):
     else:
         st.error("Please enter a question.")
 
-st.markdown(""<h3>Disclaimer</h3>
-The chatbot provides responses based on my CV content. Verify critical details independently.
-"", unsafe_allow_html=True)
+st.markdown(
+    """<h3>Disclaimer</h3>
+    The chatbot provides responses based on my CV content. Verify critical details independently.
+    """,
+    unsafe_allow_html=True
+)
